@@ -43,9 +43,9 @@
 
         .products-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
             gap: 20px;
-            width: 80%;
+            width: 90%;
             max-width: 1200px;
         }
 
@@ -64,7 +64,7 @@
         .product-card img {
             width: 100%;
             height: 200px;
-            object-fit: cover;
+            /* object-fit: cover; */
         }
 
         .product-info {
@@ -103,19 +103,24 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="product-title" >WORLD ENERGY TECHNOLOGY</h1>
-        <a href="https://www.wetsarl.com/">
-        <img src="./wet_logo.937252b3.png" 
-        alt="World Energy Technologies" width="200" height="250"></a>
-    </div>
+    <header style="width: 100%; background-color: #f4f4f9; padding: 20px 0; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <div class="container">
+            <h1 class="product-title" style="font-size: 2em; color: #333;">WORLD ENERGY TECHNOLOGY</h1>
+            <a href="https://www.wetsarl.com/">
+                <img src="./wet_logo.937252b3.png" alt="World Energy Technologies" width="200" height="250" style="border-radius: 8px;">
+            </a>
+        </div>
+    </header>
+    
 <div class="products-container">
     <div class="product-card" id="produit1">
         <span class="anchor" id="produit1-anchor"></span>
         <img src="./papaye.png" alt="Produit 1">
         <div class="product-info">
             <h3 class="product-title">Jus de papaye</h3>
-            <p class="product-description">Description du produit 1.</p>
+            <p class="product-description"> Un délice tropical, ce jus de papaye offre une douceur onctueuse et une couleur éclatante, riche en vitamines et en antioxydants.
+
+            </p>
         </div>
     </div>
     <div class="product-card" id="produit2">
@@ -123,7 +128,7 @@
         <img src="./ananas.png" alt="Produit 2">
         <div class="product-info">
             <h3 class="product-title">Jus d’ananas</h3>
-            <p class="product-description">Description du produit 2.</p>
+            <p class="product-description">Rafraîchissant et acidulé, le jus d’ananas évoque des plages ensoleillées, avec son goût sucré et juteux qui réveille les papilles.</p>
         </div>
     </div>
     <div class="product-card" id="produit3">
@@ -131,7 +136,7 @@
         <img src="./bissap.png" alt="Produit 3">
         <div class="product-info">
             <h3 class="product-title">Jus de bissap</h3>
-            <p class="product-description">Description du produit 3.</p>
+            <p class="product-description">Ce jus de fleurs d’hibiscus offre une belle robe rouge vif et une saveur légèrement acidulée, idéal pour une boisson désaltérante et pleine de bienfaits.</p>
         </div>
     </div>
     <div class="product-card" id="produit4">
@@ -139,7 +144,7 @@
         <img src="./ananas au gingembre.png" alt="Produit 4">
         <div class="product-info">
             <h3 class="product-title">Jus d’ananas gingembre</h3>
-            <p class="product-description">Description du produit 4.</p>
+            <p class="product-description">Un mélange explosif de douceur et de piquant, ce jus combine le goût sucré de l’ananas avec le zing réchauffant du gingembre, parfait pour stimuler l’énergie.</p>
         </div>
     </div>
     <div class="product-card" id="produit5">
@@ -147,7 +152,7 @@
         <img src="./bissap au gingembre.png" alt="Produit 5">
         <div class="product-info">
             <h3 class="product-title">Jus de bissap gingembre</h3>
-            <p class="product-description">Description du produit 5.</p>
+            <p class="product-description">Alliant l’acidité florale du bissap et le piquant du gingembre, ce jus offre une expérience gustative unique, délicieuse et revitalisante.</p>
         </div>
     </div>
     <div class="product-card" id="produit5">
@@ -155,7 +160,7 @@
         <img src="./tamarin.png" alt="Produit 5">
         <div class="product-info">
             <h3 class="product-title">Jus de tamarin</h3>
-            <p class="product-description">Description du produit 5.</p>
+            <p class="product-description">Ce jus acidulé et sucré, avec sa note exotique, évoque des souvenirs d’enfance et est riche en vitamines, parfait pour une boisson originale.</p>
         </div>
     </div>
     <div class="product-card" id="produit5">
@@ -163,7 +168,9 @@
         <img src="./mangue.png" alt="Produit 5">
         <div class="product-info">
             <h3 class="product-title">Jus de mangue</h3>
-            <p class="product-description">Description du produit 5.</p>
+            <p class="product-description">Un véritable nectar des tropiques, ce jus de mangue séduit par sa douceur et son onctuosité, transportant instantanément vers des îles ensoleillées.
+
+            </p>
         </div>
     </div>
     <div class="product-card" id="produit5">
@@ -171,10 +178,14 @@
         <img src="./pasteque.png" alt="Produit 5">
         <div class="product-info">
             <h3 class="product-title">Jus de pastèque</h3>
-            <p class="product-description">Description du produit 5.</p>
+            <p class="product-description">Léger et désaltérant, le jus de pastèque est un incontournable de l’été, avec son goût sucré et rafraîchissant qui hydrate à chaque gorgée.</p>
         </div>
     </div>
 </div>
-
+<footer style="width: 100%; background-color: #333; color: #fff; padding: 20px; text-align: center;margin-top: 50px;">
+    <p>&copy; 2024 Wet SARL. Tous droits réservés.</p>
+    <p>Numéro de société : 98535183</p>
+    <p>Site web : <a href="https://www.wetsarl.com/" style="color: #fff; text-decoration: underline;">www.wetsarl.com</a></p>
+</footer>
 </body>
 </html>
