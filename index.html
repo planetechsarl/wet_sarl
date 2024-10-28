@@ -1,1 +1,150 @@
-Text1
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation des Produits</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        nav {
+            margin-bottom: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .anchor {
+            display: block;
+            position: relative;
+            top: -80px; /* Ajustez ce chiffre selon votre besoin */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#produit1">Produit 1</a></li>
+        <li><a href="#produit2">Produit 2</a></li>
+        <li><a href="#produit3">Produit 3</a></li>
+        <li><a href="#produit4">Produit 4</a></li>
+        <li><a href="#produit5">Produit 5</a></li>
+    </ul>
+</nav>
+
+<div class="products-container">
+    <div class="product-card" id="produit1">
+        <span class="anchor" id="produit1-anchor"></span>
+        <img src="./(16.139 cm x 8 cm).png" alt="Produit 1">
+        <div class="product-info">
+            <h3 class="product-title">Produit 1</h3>
+            <p class="product-description">Description du produit 1.</p>
+        </div>
+    </div>
+    <div class="product-card" id="produit2">
+        <span class="anchor" id="produit2-anchor"></span>
+        <img src="https://via.placeholder.com/200" alt="Produit 2">
+        <div class="product-info">
+            <h3 class="product-title">Produit 2</h3>
+            <p class="product-description">Description du produit 2.</p>
+        </div>
+    </div>
+    <div class="product-card" id="produit3">
+        <span class="anchor" id="produit3-anchor"></span>
+        <img src="https://via.placeholder.com/200" alt="Produit 3">
+        <div class="product-info">
+            <h3 class="product-title">Produit 3</h3>
+            <p class="product-description">Description du produit 3.</p>
+        </div>
+    </div>
+    <div class="product-card" id="produit4">
+        <span class="anchor" id="produit4-anchor"></span>
+        <img src="https://via.placeholder.com/200" alt="Produit 4">
+        <div class="product-info">
+            <h3 class="product-title">Produit 4</h3>
+            <p class="product-description">Description du produit 4.</p>
+        </div>
+    </div>
+    <div class="product-card" id="produit5">
+        <span class="anchor" id="produit5-anchor"></span>
+        <img src="https://via.placeholder.com/200" alt="Produit 5">
+        <div class="product-info">
+            <h3 class="product-title">Produit 5</h3>
+            <p class="product-description">Description du produit 5.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
